@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T10:46:12",
+  "generated_at": "2026-09-01T16:55:46",
   "range": {
     "start": "2026-08-19",
     "end": "2026-08-31"
@@ -25,7 +25,14 @@
       "2026-08-31"
     ],
     "ai_dau_avg": 2020044.0,
-    "rollout_pct": 0.1,
+    "rollout_pct": 0.2,
+    "rollout_default_pct": 0.1,
+    "rollout_schedule": [
+      {
+        "effective_from": "2026-08-27",
+        "rollout_pct": 0.2
+      }
+    ],
     "funnel_stages": [
       "L1 权益池(400万)",
       "L2 可触达池",
@@ -473,24 +480,24 @@
       "ai_dau": 2442008,
       "estimated_et_dau_wan": 5440.0,
       "coverage_version_pct": 7.28,
-      "reachable_pool": 35199,
+      "reachable_pool": 70399,
       "newfile_uv": 2466226,
       "est_premium_newfile_uv": 219220,
       "newfile_ver_uv": 184932,
-      "est_rollout_premium_newfile_uv": 1643,
-      "est_blank_no_panel_uv": 0,
+      "est_rollout_premium_newfile_uv": 3287,
+      "est_blank_no_panel_uv": 1535,
       "panel_show_uv": 1752,
-      "panel_show_vs_est_pct": 106.6,
-      "exposure_vs_reachable_pct": 5.0,
+      "panel_show_vs_est_pct": 53.3,
+      "exposure_vs_reachable_pct": 2.5,
       "send_uv": 8,
       "user_edit_uv": 1570,
       "close_button_uv": 258,
       "send_rate_pct": 0.46,
       "createrequest_uv": 8,
       "feature_dau": 4,
-      "rollout_pct": 0.1,
-      "estimated_full_dau": 549,
-      "estimated_full_exposure": 240679
+      "rollout_pct": 0.2,
+      "estimated_full_dau": 275,
+      "estimated_full_exposure": 120339
     },
     {
       "stat_date": "2026-08-28",
@@ -502,24 +509,24 @@
       "ai_dau": 2388597,
       "estimated_et_dau_wan": 5321.0,
       "coverage_version_pct": 11.46,
-      "reachable_pool": 54222,
+      "reachable_pool": 108444,
       "newfile_uv": 2388511,
       "est_premium_newfile_uv": 212312,
       "newfile_ver_uv": 267817,
-      "est_rollout_premium_newfile_uv": 2380,
-      "est_blank_no_panel_uv": 0,
+      "est_rollout_premium_newfile_uv": 4761,
+      "est_blank_no_panel_uv": 403,
       "panel_show_uv": 4358,
-      "panel_show_vs_est_pct": 183.1,
-      "exposure_vs_reachable_pct": 8.0,
+      "panel_show_vs_est_pct": 91.5,
+      "exposure_vs_reachable_pct": 4.0,
       "send_uv": 17,
       "user_edit_uv": 3883,
       "close_button_uv": 657,
       "send_rate_pct": 0.39,
       "createrequest_uv": 17,
       "feature_dau": 13,
-      "rollout_pct": 0.1,
-      "estimated_full_dau": 1134,
-      "estimated_full_exposure": 380147
+      "rollout_pct": 0.2,
+      "estimated_full_dau": 567,
+      "estimated_full_exposure": 190074
     },
     {
       "stat_date": "2026-08-29",
@@ -531,24 +538,24 @@
       "ai_dau": 1432462,
       "estimated_et_dau_wan": 3191.1,
       "coverage_version_pct": 12.47,
-      "reachable_pool": 35377,
+      "reachable_pool": 70755,
       "newfile_uv": 1248408,
       "est_premium_newfile_uv": 110969,
       "newfile_ver_uv": 169272,
-      "est_rollout_premium_newfile_uv": 1504,
-      "est_blank_no_panel_uv": 0,
+      "est_rollout_premium_newfile_uv": 3009,
+      "est_blank_no_panel_uv": 404,
       "panel_show_uv": 2605,
-      "panel_show_vs_est_pct": 173.2,
-      "exposure_vs_reachable_pct": 7.4,
+      "panel_show_vs_est_pct": 86.6,
+      "exposure_vs_reachable_pct": 3.7,
       "send_uv": 6,
       "user_edit_uv": 2346,
       "close_button_uv": 344,
       "send_rate_pct": 0.23,
       "createrequest_uv": 6,
       "feature_dau": 6,
-      "rollout_pct": 0.1,
-      "estimated_full_dau": 481,
-      "estimated_full_exposure": 208862
+      "rollout_pct": 0.2,
+      "estimated_full_dau": 241,
+      "estimated_full_exposure": 104431
     },
     {
       "stat_date": "2026-08-30",
@@ -560,24 +567,24 @@
       "ai_dau": 1264161,
       "estimated_et_dau_wan": 2816.1,
       "coverage_version_pct": 11.01,
-      "reachable_pool": 27555,
+      "reachable_pool": 55111,
       "newfile_uv": 1060876,
       "est_premium_newfile_uv": 94300,
       "newfile_ver_uv": 140226,
-      "est_rollout_premium_newfile_uv": 1246,
-      "est_blank_no_panel_uv": 0,
+      "est_rollout_premium_newfile_uv": 2492,
+      "est_blank_no_panel_uv": 106,
       "panel_show_uv": 2386,
-      "panel_show_vs_est_pct": 191.5,
-      "exposure_vs_reachable_pct": 8.7,
+      "panel_show_vs_est_pct": 95.7,
+      "exposure_vs_reachable_pct": 4.3,
       "send_uv": 11,
       "user_edit_uv": 2145,
       "close_button_uv": 307,
       "send_rate_pct": 0.46,
       "createrequest_uv": 10,
       "feature_dau": 10,
-      "rollout_pct": 0.1,
-      "estimated_full_dau": 908,
-      "estimated_full_exposure": 216752
+      "rollout_pct": 0.2,
+      "estimated_full_dau": 454,
+      "estimated_full_exposure": 108376
     },
     {
       "stat_date": "2026-08-31",
@@ -589,24 +596,24 @@
       "ai_dau": 3022231,
       "estimated_et_dau_wan": 6732.5,
       "coverage_version_pct": 13.58,
-      "reachable_pool": 81244,
+      "reachable_pool": 162488,
       "newfile_uv": 3045865,
       "est_premium_newfile_uv": 270743,
       "newfile_ver_uv": 457542,
-      "est_rollout_premium_newfile_uv": 4067,
-      "est_blank_no_panel_uv": 0,
+      "est_rollout_premium_newfile_uv": 8134,
+      "est_blank_no_panel_uv": 457,
       "panel_show_uv": 7677,
-      "panel_show_vs_est_pct": 188.8,
-      "exposure_vs_reachable_pct": 9.4,
+      "panel_show_vs_est_pct": 94.4,
+      "exposure_vs_reachable_pct": 4.7,
       "send_uv": 47,
       "user_edit_uv": 6858,
       "close_button_uv": 1099,
       "send_rate_pct": 0.61,
       "createrequest_uv": 43,
       "feature_dau": 38,
-      "rollout_pct": 0.1,
-      "estimated_full_dau": 2799,
-      "estimated_full_exposure": 565490
+      "rollout_pct": 0.2,
+      "estimated_full_dau": 1400,
+      "estimated_full_exposure": 282745
     }
   ],
   "leader_analysis": {
@@ -615,35 +622,35 @@
       "base_date": "2026-08-31",
       "day_type": "工作日",
       "version": "12.1.0.28505",
-      "rollout_pct": 0.1,
+      "rollout_pct": 0.2,
       "coverage_version_pct": 13.58,
       "coverage_vs_base_pct": 20.31111111111111,
       "observed": {
         "version_et_dau_wan": 914.0,
         "estimated_et_dau_wan": 6732.5,
         "ai_dau": 3022231,
-        "reachable_pool": 81244,
+        "reachable_pool": 162488,
         "newfile_uv": 3045865,
         "newfile_ver_uv": 457542,
-        "est_rollout_premium_newfile_uv": 4067,
+        "est_rollout_premium_newfile_uv": 8134,
         "panel_show_uv": 7677,
-        "panel_show_vs_est_pct": 188.8,
-        "est_blank_no_panel_uv": 0,
+        "panel_show_vs_est_pct": 94.4,
+        "est_blank_no_panel_uv": 457,
         "send_uv": 47,
         "send_rate_pct": 0.61,
         "user_edit_uv": 6858,
         "close_button_uv": 1099,
         "createrequest_uv": 43,
         "feature_dau": 38,
-        "estimated_full_dau": 2799,
-        "estimated_full_exposure": 565490,
+        "estimated_full_dau": 1400,
+        "estimated_full_exposure": 282745,
         "ai_new_doc_cnt": 48,
         "panel_new_doc_cnt": 48,
         "upload_new_doc_cnt": 0
       },
       "assumptions": [
         "大会员占表格大盘 8.89%（400万/4500万，假设值）",
-        "当前蜂巢灰度 10%，仅 B 层大会员包",
+        "当前蜂巢灰度 20%，仅 B 层大会员包",
         "覆盖率有两套勿混用：对4500基准=20.31%（914.0万/4500万）；对当日预估表格日活=13.58%（914.0万/6732.5万）。L8/场景外推用后者",
         "推全外推假设：转化率（弹出率/发送率/成功率）与当日观测一致",
         "「全体用户推全」= 免费+大会员；相对仅大会员推全，面板链路倍数 = 1/8.89% ≈ 11.25×（不是「免费用户单独」）"
@@ -668,42 +675,42 @@
           "label": "场景A · 仅大会员推全（100%版本 × 100%放量）",
           "note": "维持仅大会员可用；外推=当日观测/(版本覆盖率_对预估 × 放量%)",
           "pool_multiplier": 1.0,
-          "panel_exposure_per_day": 565317,
-          "send_per_day": 3461,
-          "feature_dau_per_day": 2798,
-          "createrequest_per_day": 3166,
-          "ai_new_doc_per_day": 3535,
-          "panel_new_doc_per_day": 3535,
+          "panel_exposure_per_day": 282658,
+          "send_per_day": 1730,
+          "feature_dau_per_day": 1399,
+          "createrequest_per_day": 1583,
+          "ai_new_doc_per_day": 1767,
+          "panel_new_doc_per_day": 1767,
           "upload_new_doc_per_day": 0,
-          "ai_new_doc_per_month": 106038
+          "ai_new_doc_per_month": 53019
         },
         {
           "key": "all_users_full",
           "label": "场景B · 全体用户推全=免费+大会员（100%版本 × 100%放量）",
           "note": "在场景A基础上，资格池从大会员扩至全体表格用户（×1/8.89%≈11.25）。含大会员，不是「排除大会员的纯免费」",
           "pool_multiplier": 11.25,
-          "panel_exposure_per_day": 6359812,
-          "send_per_day": 38936,
-          "feature_dau_per_day": 31480,
-          "createrequest_per_day": 35622,
-          "ai_new_doc_per_day": 39764,
-          "panel_new_doc_per_day": 39764,
+          "panel_exposure_per_day": 3179906,
+          "send_per_day": 19468,
+          "feature_dau_per_day": 15740,
+          "createrequest_per_day": 17811,
+          "ai_new_doc_per_day": 19882,
+          "panel_new_doc_per_day": 19882,
           "upload_new_doc_per_day": 0,
-          "ai_new_doc_per_month": 1192931
+          "ai_new_doc_per_month": 596465
         },
         {
           "key": "free_only_incremental",
           "label": "场景C · 仅免费用户增量（全体 − 大会员）",
           "note": "场景B − 场景A：假设免费用户转化与大会员相同；仅为拆分参考",
           "pool_multiplier": 10.25,
-          "panel_exposure_per_day": 5794496,
-          "send_per_day": 35475,
-          "feature_dau_per_day": 28682,
-          "createrequest_per_day": 32456,
-          "ai_new_doc_per_day": 36230,
-          "panel_new_doc_per_day": 36230,
+          "panel_exposure_per_day": 2897248,
+          "send_per_day": 17737,
+          "feature_dau_per_day": 14341,
+          "createrequest_per_day": 16228,
+          "ai_new_doc_per_day": 18115,
+          "panel_new_doc_per_day": 18115,
           "upload_new_doc_per_day": 0,
-          "ai_new_doc_per_month": 1086892
+          "ai_new_doc_per_month": 543446
         }
       ]
     },
@@ -803,7 +810,7 @@
         "upload_new_doc_cnt": 0,
         "ai_create_doc_cnt": 0,
         "func_new_doc_cnt": 8,
-        "extrapolated_full_ai_new_doc": 1099
+        "extrapolated_full_ai_new_doc": 549
       },
       {
         "stat_date": "2026-08-28",
@@ -814,7 +821,7 @@
         "upload_new_doc_cnt": 0,
         "ai_create_doc_cnt": 0,
         "func_new_doc_cnt": 17,
-        "extrapolated_full_ai_new_doc": 1483
+        "extrapolated_full_ai_new_doc": 742
       },
       {
         "stat_date": "2026-08-29",
@@ -825,7 +832,7 @@
         "upload_new_doc_cnt": 0,
         "ai_create_doc_cnt": 0,
         "func_new_doc_cnt": 6,
-        "extrapolated_full_ai_new_doc": 481
+        "extrapolated_full_ai_new_doc": 241
       },
       {
         "stat_date": "2026-08-30",
@@ -836,7 +843,7 @@
         "upload_new_doc_cnt": 0,
         "ai_create_doc_cnt": 0,
         "func_new_doc_cnt": 12,
-        "extrapolated_full_ai_new_doc": 1090
+        "extrapolated_full_ai_new_doc": 545
       },
       {
         "stat_date": "2026-08-31",
@@ -847,7 +854,7 @@
         "upload_new_doc_cnt": 0,
         "ai_create_doc_cnt": 0,
         "func_new_doc_cnt": 48,
-        "extrapolated_full_ai_new_doc": 3535
+        "extrapolated_full_ai_new_doc": 1767
       }
     ]
   }
