@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T16:02:56",
+  "generated_at": "2026-09-02T16:27:52",
   "range": {
     "start": "2026-08-26",
     "end": "2026-09-01"
@@ -34,8 +34,10 @@
       "L4 面板曝光(funcshow去重)",
       "L5 发送进侧栏",
       "L6-L7 功能DAU",
-      "L8 推全预估"
+      "L8 新建文档数(建表面板·action_id)",
+      "L9 推全预估新建文档数"
     ],
+    "panel_new_doc_caliber": "表格AI建表面板漏斗_日报 · 版本=总 · COUNT(DISTINCT action_id)，与 success_pv 同链路（is_show_success=-1 + doc_key 非空）",
     "formula": {
       "reachable_pool": "400万 × (版本表格日活/4500) × 放量进度",
       "est_premium_newfile_uv": "全量新建空白UV × (400万/4500万) = 全量 × 8.89%",
@@ -47,6 +49,8 @@
       "send_rate_pct": "send_to_sidebar UV / 面板曝光 UV",
       "estimated_full_dau": "功能DAU / (版本覆盖率版本/预估% × 放量%)",
       "estimated_full_exposure": "面板曝光 / (版本覆盖率版本/预估% × 放量%)",
+      "panel_new_doc_cnt": "建表面板漏斗日报 · 版本=总 · action_id 级新建文档数（= success_pv）",
+      "estimated_full_panel_new_doc": "新建文档数 / (版本覆盖率版本/预估% × 放量%)",
       "estimated_et_dau_wan": "4500 × 当天AI日活 / AI日活窗口均值"
     },
     "business_rules": {
@@ -227,9 +231,11 @@
       "send_rate_pct": 0.55,
       "createrequest_uv": 5,
       "feature_dau": 5,
+      "panel_new_doc_cnt": 5,
       "rollout_pct": 0.1,
       "estimated_full_dau": 870,
-      "estimated_full_exposure": 188183
+      "estimated_full_exposure": 188183,
+      "estimated_full_panel_new_doc": 870
     },
     {
       "stat_date": "2026-08-27",
@@ -256,9 +262,11 @@
       "send_rate_pct": 0.46,
       "createrequest_uv": 8,
       "feature_dau": 4,
+      "panel_new_doc_cnt": 6,
       "rollout_pct": 0.2,
       "estimated_full_dau": 240,
-      "estimated_full_exposure": 105430
+      "estimated_full_exposure": 105430,
+      "estimated_full_panel_new_doc": 360
     },
     {
       "stat_date": "2026-08-28",
@@ -285,9 +293,11 @@
       "send_rate_pct": 0.39,
       "createrequest_uv": 17,
       "feature_dau": 13,
+      "panel_new_doc_cnt": 17,
       "rollout_pct": 0.2,
       "estimated_full_dau": 496,
-      "estimated_full_exposure": 166298
+      "estimated_full_exposure": 166298,
+      "estimated_full_panel_new_doc": 648
     },
     {
       "stat_date": "2026-08-29",
@@ -314,9 +324,11 @@
       "send_rate_pct": 0.23,
       "createrequest_uv": 6,
       "feature_dau": 6,
+      "panel_new_doc_cnt": 8,
       "rollout_pct": 0.2,
       "estimated_full_dau": 210,
-      "estimated_full_exposure": 91530
+      "estimated_full_exposure": 91530,
+      "estimated_full_panel_new_doc": 280
     },
     {
       "stat_date": "2026-08-30",
@@ -343,9 +355,11 @@
       "send_rate_pct": 0.46,
       "createrequest_uv": 10,
       "feature_dau": 10,
+      "panel_new_doc_cnt": 22,
       "rollout_pct": 0.2,
       "estimated_full_dau": 397,
-      "estimated_full_exposure": 94971
+      "estimated_full_exposure": 94971,
+      "estimated_full_panel_new_doc": 874
     },
     {
       "stat_date": "2026-08-31",
@@ -372,9 +386,11 @@
       "send_rate_pct": 0.61,
       "createrequest_uv": 43,
       "feature_dau": 38,
+      "panel_new_doc_cnt": 58,
       "rollout_pct": 0.2,
       "estimated_full_dau": 1223,
-      "estimated_full_exposure": 247312
+      "estimated_full_exposure": 247312,
+      "estimated_full_panel_new_doc": 1867
     },
     {
       "stat_date": "2026-09-01",
@@ -401,9 +417,11 @@
       "send_rate_pct": 0.61,
       "createrequest_uv": 69,
       "feature_dau": 62,
+      "panel_new_doc_cnt": 96,
       "rollout_pct": 0.2,
       "estimated_full_dau": 1414,
-      "estimated_full_exposure": 289337
+      "estimated_full_exposure": 289337,
+      "estimated_full_panel_new_doc": 2189
     }
   ],
   "leader_analysis": {
@@ -436,13 +454,15 @@
         "estimated_full_exposure": 289337,
         "ai_new_doc_cnt": 96,
         "panel_new_doc_cnt": 96,
-        "upload_new_doc_cnt": 0
+        "upload_new_doc_cnt": 0,
+        "estimated_full_panel_new_doc": 2189
       },
       "assumptions": [
         "大会员占表格大盘 8.89%（400万/4500万，假设值）",
         "当前蜂巢灰度 20%，仅 B 层大会员包",
-        "覆盖率有两套勿混用：对4500基准=30.6%（1377.0万/4500万）；对当日预估表格日活=21.93%（1377.0万/6279.2万）。L8/场景外推用后者",
-        "推全外推假设：转化率（弹出率/发送率/成功率）与当日观测一致",
+        "覆盖率有两套勿混用：对4500基准=30.6%（1377.0万/4500万）；对当日预估表格日活=21.93%（1377.0万/6279.2万）。L9/场景外推用后者（覆盖率_对预估）",
+        "推全外推假设：转化率（弹出率/发送率/成功率/文档产出）与当日观测一致",
+        "L8 新建文档数口径 = 建表面板漏斗日报 · 版本=总 · action_id（与 success_pv 同链路）",
         "「全体用户推全」= 免费+大会员；相对仅大会员推全，面板链路倍数 = 1/8.89% ≈ 11.25×（不是「免费用户单独」）"
       ],
       "bottleneck": "L4→L5 发送率极低：发送仅 77（0.61%）；主流失为编辑/关闭 — user_edit 11284 + close_button 1953（分项 UV，同人可重复，合计可大于曝光）",
@@ -534,7 +554,8 @@
         "upload_new_doc_cnt": 3,
         "ai_create_doc_cnt": 0,
         "func_new_doc_cnt": 7,
-        "extrapolated_full_ai_new_doc": 1217
+        "extrapolated_full_ai_new_doc": 1217,
+        "extrapolated_full_panel_new_doc": 870
       },
       {
         "stat_date": "2026-08-27",
@@ -545,7 +566,8 @@
         "upload_new_doc_cnt": 0,
         "ai_create_doc_cnt": 0,
         "func_new_doc_cnt": 8,
-        "extrapolated_full_ai_new_doc": 480
+        "extrapolated_full_ai_new_doc": 480,
+        "extrapolated_full_panel_new_doc": 360
       },
       {
         "stat_date": "2026-08-28",
@@ -556,7 +578,8 @@
         "upload_new_doc_cnt": 0,
         "ai_create_doc_cnt": 0,
         "func_new_doc_cnt": 17,
-        "extrapolated_full_ai_new_doc": 648
+        "extrapolated_full_ai_new_doc": 648,
+        "extrapolated_full_panel_new_doc": 648
       },
       {
         "stat_date": "2026-08-29",
@@ -567,7 +590,8 @@
         "upload_new_doc_cnt": 0,
         "ai_create_doc_cnt": 0,
         "func_new_doc_cnt": 6,
-        "extrapolated_full_ai_new_doc": 210
+        "extrapolated_full_ai_new_doc": 210,
+        "extrapolated_full_panel_new_doc": 280
       },
       {
         "stat_date": "2026-08-30",
@@ -578,7 +602,8 @@
         "upload_new_doc_cnt": 0,
         "ai_create_doc_cnt": 0,
         "func_new_doc_cnt": 12,
-        "extrapolated_full_ai_new_doc": 477
+        "extrapolated_full_ai_new_doc": 477,
+        "extrapolated_full_panel_new_doc": 874
       },
       {
         "stat_date": "2026-08-31",
@@ -589,7 +614,8 @@
         "upload_new_doc_cnt": 0,
         "ai_create_doc_cnt": 0,
         "func_new_doc_cnt": 48,
-        "extrapolated_full_ai_new_doc": 1545
+        "extrapolated_full_ai_new_doc": 1545,
+        "extrapolated_full_panel_new_doc": 1867
       },
       {
         "stat_date": "2026-09-01",
@@ -600,7 +626,8 @@
         "upload_new_doc_cnt": 0,
         "ai_create_doc_cnt": 0,
         "func_new_doc_cnt": 96,
-        "extrapolated_full_ai_new_doc": 2189
+        "extrapolated_full_ai_new_doc": 2189,
+        "extrapolated_full_panel_new_doc": 2189
       }
     ]
   }
